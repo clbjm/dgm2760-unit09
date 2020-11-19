@@ -46,6 +46,7 @@ header h2 {
 	nav ul#primaryNavigation li {
 		float: left;
 		border-right: solid 1px rgba(0,0,0,0.3);
+
 	}
 	nav ul#primaryNavigation li a { 
 		display:block;
@@ -58,6 +59,9 @@ header h2 {
 	nav ul#primaryNavigation li a:hover {
 		color: rgba(0,0,0,0.8);	
 	}
+	ul#smallNavArea {
+		display: none;
+	}
 } /* end of Desktop navigation*/
 
 
@@ -69,7 +73,6 @@ header h2 {
 @media only screen and (max-width: 600px) {
 	nav#smallNavArea{display: block;}
 	ul#primaryNavigation {display: none;}
-
 	nav#smallNavArea {height:100vh; background-color: #adadad;}
 	nav#smallNavArea ul  {padding: .5em 0;}
 	nav#smallNavArea ul li {list-style: none;}
@@ -87,13 +90,22 @@ header h2 {
 	div.smallMenuLink {
 		display: block;
 		background-color: #742124;
-		
 	}
 	div.smallMenuLink a {
-		display: block;
+		display: flex;
 		color: #FFF;
 		text-decoration: none;
 		padding: .6rem;
+	}
+	.smallNavArea ul {
+		min-width: 5%;
+	}
+	ul#smallNavArea {
+		text-align: center;
+		position: relative;
+		margin-top: -55rem;
+		min-width: 50px;
+		background-color: gray;
 	}
 } /* end of small navigation*/
 

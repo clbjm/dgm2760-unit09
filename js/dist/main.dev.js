@@ -12,7 +12,7 @@ function duplicateMenu() {
   });
   var primaryNavigation = document.querySelector('#primaryNavigation');
   var clonedprimaryNavigation = primaryNavigation.cloneNode(true);
-  clonedprimaryNavigation.id = 'smallNavArea';
+  clonedprimaryNavigation.id = '#smallNavArea';
   document.body.appendChild(clonedprimaryNavigation);
 }
 
